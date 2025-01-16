@@ -1,11 +1,14 @@
 {
   "name": "workshop_make-your-own-codewars",
   "version": "1.0.0",
-  "description": "",
+  "description": "London Underground Stations",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "vitest"
   },
   "author": "School of Code",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "vitest": "^3.0.1"
+  }
 }
