@@ -1,16 +1,6 @@
 //Write a function that takes a list of London Underground station names and returns the most common first letter among all the station names. If there is a tie, return the first letter that appears alphabetically first.
 
-//Find first letter from array below.
-
-export function findFirstLetter(str) {
-    if (str.length > 0) {
-        return str[0];
-    } else {
-        return '';
-    }
-}
-    //Providing list of station names, but is not a comprehensive list, some stations are missing.
-    const londonUndergroundStations = [
+const londonUndergroundStations = [
         "Aldgate",
         "Aldgate East",
         "Alperton",
@@ -168,35 +158,6 @@ export function findFirstLetter(str) {
         "Sudbury Town",
         "Surbiton",
         "Temple"
-    ];
+]
     
-    // Search for most commonly used first letter
-    export function mostUsedFirstLetter(stations) {
-        const letterCounts = {};
-    
-        stations.forEach(station => {
-            const firstLetter = findFirstLetter(station);
-            if (firstLetter) {
-                if (!letterCounts[firstLetter]) {
-                    letterCounts[firstLetter] = 0;
-                }
-                letterCounts[firstLetter]++;
-            }
-        });
-    
-        let mostUsedLetter = '';
-        let maxCount = 0;
-    
-        for (const letter in letterCounts) {
-            if (letterCounts[letter] > maxCount) {
-                maxCount = letterCounts[letter];
-                mostUsedLetter = letter;
-            }
-        }
-    
-        return mostUsedLetter;
-    }
-    
-    // Result shown in terminal
-    console.log(mostUsedFirstLetter(londonUndergroundStations));
-    
+export function findFirstLetter (){}

@@ -8,7 +8,7 @@
   },
   "author": "School of Code",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
     "vitest": "^3.0.1"
   }
 }
